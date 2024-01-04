@@ -20,3 +20,5 @@ app.use("/customer", customer_routes);
 app.use("/", genl_routes);
 
 app.listen(PORT,()=>console.log("Server is running"));
+
+//add comment
