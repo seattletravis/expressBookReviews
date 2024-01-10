@@ -20,6 +20,14 @@ public_users.get('/',function (req, res) {
 // Get book details based on ISBN
 public_users.get('/isbn/:isbn',function (req, res) {
   //Write your code here
+  const author = req.params.author
+  const title = req.params.title
+  const reviews = req.params.reviews
+  const bookDetails = {
+    "author": res.send(books[author]),
+    "title": res.send(books[title]),
+    "reviews": res.send(books[reviews])
+  }
   return res.status(300).json({message: "Yet to be implemented"});
  });
   
